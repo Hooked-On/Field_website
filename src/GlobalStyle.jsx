@@ -1,16 +1,12 @@
-import {createGlobalStyle} from 'styled-components';
-import theme from './theme';
+import { createGlobalStyle } from 'styled-components';
+import theme from "./theme";
 import './index.css';
 
 const GlobalStyle = createGlobalStyle`
 html{
     font-family: "SUIT", sans-serif;
-    background-color: ${theme.colors.black};
-    color: ${theme.colors.white};
-
-    @media (min-width: 768px) {
-  font-size: 24px;
-  }
+    background-color: ${theme.color.black};
+    color: ${theme.color.white};
 },
 body
 {
