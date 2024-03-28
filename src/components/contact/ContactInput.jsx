@@ -31,6 +31,10 @@ const VerticalCenter = styled.div`
   display: flex;
   align-items: center;
   white-space: nowrap;
+  height: 30.5px;
+  @media (min-width: 768px) {
+    height: 38px;
+  }
 `;
 
 const Check = styled.span`

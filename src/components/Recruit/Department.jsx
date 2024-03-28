@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import styled from 'styled-components';
 import theme from '../../theme';
-import {BigContentWrapper} from './UI/ContentWrapper';
+import ContentWrapper from './UI/ContentWrapper';
 
 const SubTitle = styled.h2`
   font-size: 1.5rem;
@@ -153,7 +153,7 @@ function DepartmentBox({part, p, target}) {
       <Question>{`${DEPARTMENTINFO[part].department}${p}`}</Question>
       <ul>
         {DEPARTMENTINFO[part][target].map((item, index) => (
-          <Answer key={index}>
+          <Answer key={item}>
             <Number>{`${index + 1}.`}</Number>
             {item}
           </Answer>
@@ -169,7 +169,7 @@ export default function Department() {
     setSelectedDepartment(name);
   }
   return (
-    <BigContentWrapper $margin='5rem 0'>
+    <ContentWrapper $margin='5rem 0'>
       <SubTitle>모집 분야</SubTitle>
       <ButtonWrapper $activelink={selectedDepartment}>
         {Object.keys(DEPARTMENTINFO).map(item => (
@@ -180,6 +180,6 @@ export default function Department() {
       </ButtonWrapper>
       <DepartmentBox part={selectedDepartment} p='는 어떤 인재를 원하나요! 🔍' target='explain' />
       <DepartmentBox part={selectedDepartment} p='는 어떤 활동을 하나요! 💪' target='activity' />
-    </BigContentWrapper>
+    </ContentWrapper>
   );
 }

@@ -8,6 +8,12 @@ const MenuBar = styled.header`
   position: sticky;
   top: 0;
   z-index: 100;
+  background: #141414;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 const MainHeaderWrapper = styled.div`
@@ -81,7 +87,7 @@ export default function Header() {
   const HomeDirection = (
     <Home href='/'>
       <HomeFigure>
-        <HomeLogo src='/fieldLogo.png' />
+        <HomeLogo src='/fieldLogo.png' alt='fieldLogo' />
         <HomeTitle>FIELD</HomeTitle>
       </HomeFigure>
     </Home>
@@ -91,7 +97,7 @@ export default function Header() {
     <MenuBar>
       <MainHeaderWrapper>
         {HomeDirection}
-        <MenuButton onClick={() => showHandler()}>
+        <MenuButton aria-label='MenuButton' onClick={() => showHandler()}>
           <MenuBurgur open={isOpen} />
         </MenuButton>
       </MainHeaderWrapper>

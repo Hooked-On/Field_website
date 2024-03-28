@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import styled, {keyframes} from 'styled-components';
 import theme from '../../theme';
 import {LoadDateData} from '../../lib/Apiservice';
-import {SmallContentWrapper} from './UI/ContentWrapper';
+import ContentWrapper from './UI/ContentWrapper';
 
 const P = styled.p`
   font-size: ${props => (props.$fontSize ? props.$fontSize : '1rem')};
@@ -52,6 +52,10 @@ const DateP = styled(P)`
   text-align: left;
   display: flex;
   padding: 0 0.5rem 0 0;
+  letter-spacing: -2px;
+  @media (min-width: 768px) {
+    letter-spacing: 0;
+  }
 `;
 
 const AddressLink = styled.a`
@@ -87,23 +91,23 @@ const Emoji = styled.span`
 
 function InfoGroup({subtitle, content}) {
   return (
-    <SmallContentWrapper>
+    <ContentWrapper>
       <SubTitle>{subtitle}</SubTitle>
       <P $fontSize='1.25rem' $color='white' $>
         {content}
       </P>
-    </SmallContentWrapper>
+    </ContentWrapper>
   );
 }
 
 function InfoGroupWithBox({subtitle, content}) {
   return (
-    <SmallContentWrapper>
+    <ContentWrapper>
       <SubTitle>{subtitle}</SubTitle>
       <ContentBox>
         <BoxSize>{content}</BoxSize>
       </ContentBox>
-    </SmallContentWrapper>
+    </ContentWrapper>
   );
 }
 

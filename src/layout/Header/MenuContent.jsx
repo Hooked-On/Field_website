@@ -25,12 +25,11 @@ const HeaderContentSection = styled.div`
   display: ${props => (props.$isOpen ? 'block' : 'none')};
 
   @media (min-width: 1024px) {
+    position: inherit;
     display: inline;
     width: auto;
+    padding: 0 15% 0 0;
     height: auto;
-    top: 0px;
-    left: auto;
-    right: 15%;
     background: none;
     z-index: 10;
   }

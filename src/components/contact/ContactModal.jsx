@@ -49,15 +49,15 @@ const Modal = styled.section`
   flex-direction: column;
   background-color: ${theme.colors.white};
   height: 9rem;
-  width: 75%;
+  width: 70%;
+  max-width: 300px;
   animation: ${slideDownAnimation} 0.5s ease-in-out;
   border-radius: 2rem;
   align-items: center;
   box-shadow: 0.8rem 0.8rem 0.8rem rgba(0, 0, 0, 0.3);
 
-  @media (min-width: 1024px) {
-    width: 40%;
-    max-width: 600px;
+  @media (min-width: 768px) {
+    max-width: 20rem;
   }
 `;
 
@@ -71,7 +71,6 @@ const ModalButton = styled.button`
   color: ${theme.colors.white};
   margin: 1.2rem 0 0 0;
   font-weight: 600;
-  font-family: 'Nanum Myeongjo', serif;
 `;
 
 const ModalP = styled.p`

@@ -117,7 +117,7 @@ export default function SideBar() {
           />
         </>
       )}
-      <BaseIconButton>
+      <BaseIconButton aria-label='sideBarButton'>
         <BaseIcon
           $toggle={toggle ? 'true' : undefined}
           xmlns='http://www.w3.org/2000/svg'

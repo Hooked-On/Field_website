@@ -3,9 +3,13 @@ import {useNavigate} from 'react-router-dom';
 import theme from '../theme';
 
 const PageSection = styled.section`
-  height: calc(100vh - 58px - 112px);
+  height: calc(100vh - 170px);
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1024px) {
+    height: calc(100vh - 134px);
+  }
 `;
 
 const Title = styled.h1`
@@ -39,8 +43,10 @@ const Button = styled.button`
   border: 1px solid white;
   background: ${theme.colors.black};
   color: ${theme.colors.white};
-  font-family: 'Nanum Myeongjo', serif;
   margin: 0rem 0.5rem;
+  &: hover {
+    cursor: pointer;
+  }
 `;
 
 const Img = styled.img`

@@ -48,15 +48,15 @@ const TypeSelect = styled.select`
   color: ${theme.colors.black};
   appearance: none;
   border: 0.13rem solid ${theme.colors.black};
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'SUIT-Regular';
-  font-weight: 900;
+  font-weight: 700;
   background: url('down_arrow.png') no-repeat 90% 25%;
-  background-size: 1.5rem 1.5rem;
+  background-size: 1.25rem 1.25rem;
   border-radius: 0.7rem;
   padding: 0 0 0 0.5rem;
-  width: 7.3rem;
-  height: 2.4rem;
+  width: 5.8rem;
+  height: 2.1rem;
   z-index: 0;
 `;
 
@@ -77,6 +77,10 @@ const SubmitButton = styled.button`
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 const ButtonImg = styled.img`
   widht: 1.5rem;
