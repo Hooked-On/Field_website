@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
 
@@ -52,17 +53,16 @@ const Detail = styled.p`
 
 export default function NewTimeLineContent({data}) {
   const day = Object.keys(data);
-
   return (
     <TimeLineContainer>
       {day.map(nowDay => (
-        <DayDiv>
+        <DayDiv key={nowDay}>
           <DayTitle>{data[nowDay][0]}</DayTitle>
           {data[nowDay][1].map(item => (
-            <>
+            <React.Fragment key={item}>
               <SubTitle>{item[0]}</SubTitle>
               <Detail>{item[1]}</Detail>
-            </>
+            </React.Fragment>
           ))}
         </DayDiv>
       ))}

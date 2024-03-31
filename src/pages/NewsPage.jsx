@@ -143,13 +143,18 @@ export default function NewsPage() {
       const now = new Date();
       const lastUpdate = localStorage.getItem(`${category}-lastUpdate`);
       const lastUpdateTime = lastUpdate ? new Date(parseInt(lastUpdate, 10)) : null;
+      const categoryData = localStorage.getItem(`${category}`);
       let response;
-      if (!lastUpdateTime || now - lastUpdateTime > 24 * 60 * 60 * 1000) {
+      if (
+        !categoryData ||
+        categoryData === '[]' ||
+        !lastUpdateTime ||
+        now - lastUpdateTime > 12 * 60 * 60 * 1000
+      ) {
         response = await NewsApi(category);
         localStorage.setItem(`${category}`, JSON.stringify(response));
         localStorage.setItem(`${category}-lastUpdate`, now.getTime().toString());
       } else {
-        const categoryData = localStorage.getItem(`${category}`);
         response = categoryData ? JSON.parse(categoryData) : [];
       }
       setNewsData(response);
