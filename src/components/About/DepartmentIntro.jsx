@@ -86,7 +86,7 @@ const CardKeyWordSpan = styled.span`
   text-align: center;
   border: 2px solid white;
   border-radius: 1.875rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   @media screen and (max-width: 768px) {
     animation: ${wobble} 3s;
   }
@@ -124,7 +124,7 @@ const ActivityUl = styled.ul`
   text-indent: -0.8rem;
   word-break: keep-all;
   @media screen and (min-width: 1280px) {
-    gap: 1rem;
+    gap: 1.8rem;
     margin: 1rem 0 0 0;
     height: 224px;
     justify-content: center;
@@ -134,7 +134,7 @@ const ActivityUl = styled.ul`
 const ActivityLi = styled.li`
   font-size: 1rem;
   @media screen and (min-width: 1280px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;
 

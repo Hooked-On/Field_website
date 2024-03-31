@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import TitleSection from '../components/Main/TitleSection';
 import IntroSection from '../components/Main/IntroSection';
 import FieldIntroSection from '../components/Main/FieldIntroSection';

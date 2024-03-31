@@ -12,13 +12,7 @@ export function NewsApi(selectCategory) {
   return pb.collection('News').getFullList({
     filter: `category="${selectCategory}"`,
     expand: `newsId`,
-  });
-}
-
-export function NewsYearApi(category) {
-  return pb.collection('News').getFullList({
-    filter: `category="${category}"`,
-    fields: 'year, month',
+    sort: '-created',
   });
 }
 

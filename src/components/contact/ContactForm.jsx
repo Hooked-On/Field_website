@@ -27,17 +27,8 @@ const Form = styled.form`
     background-position: 50% 35%;
   }
 `;
-
-const InputLabel = styled.label`
-  font-size: 1.2rem;
-  margin: 1rem 0 0 0;
-  display: block;
-  color: ${theme.colors.black};
-  font-weight: 900;
+const TypeLabel = styled.label`
   padding: 0 1rem;
-`;
-
-const TypeLabel = styled(InputLabel)`
   position: absolute;
   margin: 0.8rem 0 0 0;
   display: flex;
@@ -55,16 +46,15 @@ const TypeSelect = styled.select`
   background-size: 1.25rem 1.25rem;
   border-radius: 0.7rem;
   padding: 0 0 0 0.5rem;
-  width: 5.8rem;
+  width: 6.8rem;
   height: 2.1rem;
   z-index: 0;
 `;
 
 const SubmitButton = styled.button`
-  position: absoulte;
   background: ${theme.colors.white};
   font-family: 'SUIT';
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: ${theme.colors.black};
   appearance: none;
   border: none;
@@ -72,7 +62,6 @@ const SubmitButton = styled.button`
   border-radius: 1rem;
   margin: 1.5rem auto;
   padding: 0.65rem 1.4rem 0.7rem 1.4rem;
-  display: absolute;
   font-weight: 900;
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   display: flex;
@@ -91,8 +80,8 @@ const ButtonImg = styled.img`
 const Option = styled.option`
   appearance: none;
   font-family: 'SUIT-Regular';
-  font-weight: 900;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
 `;
 
 export default function ContactForm() {

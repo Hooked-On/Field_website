@@ -99,14 +99,14 @@ function TitleSection() {
     <TitleContainer>
       <NanumH2>전국 대학생 산업공학도 모임</NanumH2>
       <ContentContainer>
-        <GoblinH3 size='2.25rem' $line='1.4'>
+        <GoblinH3 size='2rem' $line='1.4'>
           <Span>
             <FirstAlphabet color='red'>F</FirstAlphabet>
             <TextGenerator
               text='u t u r e'
               $margin='0'
               align=''
-              size='2.25rem'
+              size='2rem'
               $weight='100'
               height='0'
               spacing='-6px'
@@ -119,7 +119,7 @@ function TitleSection() {
               text='n d u s t r i a l'
               $margin='0'
               align=''
-              size='2.25rem'
+              size='2rem'
               $weight='100'
               height='0'
               spacing='-6px'
@@ -132,7 +132,7 @@ function TitleSection() {
               text='n g i n e e r i n g'
               $margin='0'
               align=''
-              size='2.25rem'
+              size='2rem'
               $weight='100'
               height='0'
               spacing='-6px'
@@ -142,10 +142,10 @@ function TitleSection() {
           <Span>
             <FirstAlphabet color='blue'>L</FirstAlphabet>
             <TextGenerator
-              text='e a d e r s &'
+              text='e a d e r s'
               $margin='0'
               align=''
-              size='2.25rem'
+              size='2rem'
               $weight='100'
               height='0'
               spacing='-6px'
@@ -158,7 +158,7 @@ function TitleSection() {
               text='r e a m e r s'
               $margin='0'
               align=''
-              size='2.25rem'
+              size='2rem'
               $weight='100'
               height='0'
               spacing='-6px'
@@ -168,7 +168,7 @@ function TitleSection() {
         </GoblinH3>
 
         <TextGenerator
-          $size='1rem'
+          size='16px'
           $height='1.5'
           $margin='2rem 0 0 0'
           text="FIELD란, ‘Future Industrial Engineering Leaders and Dreamers’ 의 약자로, 미래의 핵심
@@ -178,6 +178,7 @@ function TitleSection() {
           time='0.03'
           $justify='end'
           $desktopAlign='left'
+          align='left'
         />
       </ContentContainer>
       <FlexCenter>
