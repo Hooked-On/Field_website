@@ -33,12 +33,15 @@ const H2 = styled.h2`
 `;
 
 const P = styled.p`
-  font-size: 1rem;
+  font-size: 16px;
   margin: 1rem 0;
   font-weight: 500;
   line-height: 1.5;
   word-break: keep-all;
   white-space: pre-wrap;
+  @media screen and (min-width: 1024px) {
+    margin: 1rem 0 32px 0;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -50,13 +53,16 @@ const Wrapper = styled.div`
 `;
 
 const A = styled.a`
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 900;
   display: flex;
   gap: 3px;
   align-items: center;
   color: white;
-  margin: 1rem 0;
+  margin: 9px 0;
+  @media screen and (min-width: 1024px) {
+    margin: 32px 0;
+  }
 `;
 
 const FlexGrowDiv = styled.div`
@@ -77,6 +83,9 @@ const DateP = styled.p`
   margin: 1rem 0;
   font-size: 0.75rem;
   font-weight: 900;
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
 `;
 
 const StyledSwiper = styled(Swiper)`
@@ -178,7 +187,7 @@ function NewsDetailPage() {
             {detailNewsData?.file.length > 0 ? (
               <A href={`${fileUrl}${detailNewsData.id}/${detailNewsData.file[0]}`} target='_blank'>
                 첨부파일
-                <Icon src='fileIcon.png' />
+                <Icon src='/fileIcon.png' />
               </A>
             ) : (
               <div style={{flex: 1}} />
