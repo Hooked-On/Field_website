@@ -39,9 +39,6 @@ const P = styled.p`
   line-height: 1.5;
   word-break: keep-all;
   white-space: pre-wrap;
-  @media screen and (min-width: 1024px) {
-    font-size: 21px;
-  }
 `;
 
 const Wrapper = styled.div`
@@ -53,7 +50,7 @@ const Wrapper = styled.div`
 `;
 
 const A = styled.a`
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 900;
   display: flex;
   gap: 3px;

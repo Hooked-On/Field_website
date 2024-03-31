@@ -39,7 +39,7 @@ const Figure = styled.figure`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
   @media screen and (min-width: 1024px) {
     visibility: hidden;
   }
@@ -67,13 +67,13 @@ const ButtonWapper = styled.div`
 
 function CampMainSection() {
   return (
-    <TitleContainer src='camp1.png'>
+    <TitleContainer src='camp1.webp'>
       <H1>FIELD CAMP</H1>
       <TitleH2>FIELD CAMP를 통해</TitleH2>
       <TitleH2 $margin='10px 0 0 0 '>여러분의 열정을 보여주세요!!</TitleH2>
       <ButtonWapper>
         <Link to='https://linktr.ee/iefieldcamp'>
-          <Button mg='0 0 2rem 0' label='FIELD CAMP 지원하기' animate />
+          <Button mg='0 0 1rem 0' label='FIELD CAMP 지원하기' animate />
         </Link>
         <Figure>
           <Img src='transfer-down-light.svg' />
