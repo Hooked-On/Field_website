@@ -168,7 +168,7 @@ function TitleSection() {
         </GoblinH3>
 
         <TextGenerator
-          $size='1rem'
+          size='16px'
           $height='1.5'
           $margin='2rem 0 0 0'
           text="FIELD란, ‘Future Industrial Engineering Leaders and Dreamers’ 의 약자로, 미래의 핵심
