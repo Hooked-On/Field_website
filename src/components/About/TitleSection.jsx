@@ -142,7 +142,7 @@ function TitleSection() {
           <Span>
             <FirstAlphabet color='blue'>L</FirstAlphabet>
             <TextGenerator
-              text='e a d e r s &'
+              text='e a d e r s'
               $margin='0'
               align=''
               size='2rem'
