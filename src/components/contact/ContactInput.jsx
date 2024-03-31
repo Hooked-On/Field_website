@@ -50,7 +50,7 @@ const Star = styled.span`
 `;
 
 const InputLabel = styled.label`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 16px 0 0 0;
   display: block;
   color: ${theme.colors.black};
