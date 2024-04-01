@@ -4,7 +4,7 @@
     <img width="300" alt="필드 로고" src="https://github.com/Hooked-On/Field_website/assets/130979302/fd77e353-d8ab-4ec3-b761-7f6e3f477d5b">
 </p>
 
-배포 주소 :
+배포 주소 : https://www.iefield.com/camp
 
 ## 팀 소개
 
