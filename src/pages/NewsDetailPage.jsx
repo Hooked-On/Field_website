@@ -168,7 +168,7 @@ function NewsDetailPage() {
       ) : (
         <>
           <H2>{detailNewsData.title}</H2>
-          <DateP>{detailNewsData.created ? detailNewsData.created.slice(0, 10) : ''}</DateP>
+          <DateP>{detailNewsData.date ? detailNewsData.date.slice(0, 10) : ''}</DateP>
           <StyledSwiper modules={[Pagination]} centeredSlides='true' pagination={{clickable: true}}>
             {detailNewsData.photo.length > 0 &&
               detailNewsData.photo.map(item => (
